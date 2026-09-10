@@ -29,6 +29,8 @@ Python is being studied systematically, from core language fundamentals through 
 * `is` vs `==`
 * Mutable vs immutable objects
 * Namespaces and scope fundamentals
+  
+📁 `python/01_variables`
 
 ### 2. Data Types & Data Structures
 
