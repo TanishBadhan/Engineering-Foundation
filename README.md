@@ -8,13 +8,13 @@ The repository is organized progressively. Each topic is studied from its fundam
 
 ## 📚 Current Learning
 
-### Python
+### 1. Python
 
 Python is being studied systematically, from core language fundamentals through the major concepts required for writing, understanding, and reasoning about Python programs.
 
 📁 `python/`
 
-### 1. Variables & Object Model
+#### 1. Variables & Object Model
 
 * Variables and assignment
 * Naming conventions and identifiers
@@ -32,7 +32,7 @@ Python is being studied systematically, from core language fundamentals through 
   
 📁 `python/01_variables`
 
-### 2. Data Types & Data Structures
+#### 2. Data Types & Data Structures
 
 * Integers
 * Floating-point numbers
@@ -54,7 +54,7 @@ Python is being studied systematically, from core language fundamentals through 
 * Common built-in operations
 * Built-in functions
 
-### 3. Operators & Expressions
+#### 3. Operators & Expressions
 
 * Arithmetic operators
 * Comparison operators
@@ -69,7 +69,7 @@ Python is being studied systematically, from core language fundamentals through 
 * Truth values and truthiness
 * Short-circuit evaluation
 
-### 4. Conditional Logic
+#### 4. Conditional Logic
 
 * `if`
 * `elif`
@@ -84,9 +84,9 @@ Python is being studied systematically, from core language fundamentals through 
 * Combining logical operators
 * Designing readable decision logic
 
-### 5. Iteration & Loops
+#### 5. Iteration & Loops
 
-#### `for` Loops
+##### `for` Loops
 
 * Iteration fundamentals
 * Iterables
@@ -109,7 +109,7 @@ Python is being studied systematically, from core language fundamentals through 
 * Iteration patterns
 * Common iteration mistakes
 
-#### `while` Loops
+##### `while` Loops
 
 * Loop conditions
 * State-controlled iteration
@@ -123,7 +123,7 @@ Python is being studied systematically, from core language fundamentals through 
 * Sentinel-controlled loops
 * Designing safe loop conditions
 
-#### Iteration Concepts
+##### Iteration Concepts
 
 * Iterable vs iterator
 * Lazy iteration
@@ -132,7 +132,7 @@ Python is being studied systematically, from core language fundamentals through 
 * Generator expressions
 * Memory-efficient iteration
 
-### 6. Strings
+#### 6. Strings
 
 * String creation
 * Indexing and slicing
@@ -149,7 +149,7 @@ Python is being studied systematically, from core language fundamentals through 
 * Iterating over strings
 * Practical string-processing patterns
 
-### 7. Functions
+#### 7. Functions
 
 * Defining functions
 * Calling functions
@@ -176,7 +176,7 @@ Python is being studied systematically, from core language fundamentals through 
 * Type hints
 * Pure vs impure functions
 
-### 8. Comprehensions & Functional Patterns
+#### 8. Comprehensions & Functional Patterns
 
 * List comprehensions
 * Set comprehensions
@@ -192,7 +192,7 @@ Python is being studied systematically, from core language fundamentals through 
 * When comprehensions improve code
 * When comprehensions become harmful to readability
 
-### 9. Modules & Packages
+#### 9. Modules & Packages
 
 * Importing modules
 * `import`
@@ -209,7 +209,7 @@ Python is being studied systematically, from core language fundamentals through 
 * Python's import mechanism
 * Standard library fundamentals
 
-### 10. Object-Oriented Programming
+#### 10. Object-Oriented Programming
 
 * Classes
 * Objects
@@ -242,7 +242,7 @@ Python is being studied systematically, from core language fundamentals through 
 * Abstract base classes
 * Interfaces through protocols / duck typing
 
-### 11. Error Handling & Exceptions
+#### 11. Error Handling & Exceptions
 
 * Errors vs exceptions
 * Syntax errors
@@ -260,7 +260,7 @@ Python is being studied systematically, from core language fundamentals through 
 * Handling specific vs broad exceptions
 * Designing reliable error handling
 
-### 12. File I/O
+#### 12. File I/O
 
 * Files and file paths
 * Opening files
@@ -281,7 +281,7 @@ Python is being studied systematically, from core language fundamentals through 
 * File handling errors
 * Resource management
 
-### 13. Iterators, Generators & Context Managers
+#### 13. Iterators, Generators & Context Managers
 
 * Iterator protocol
 * `__iter__`
@@ -298,7 +298,7 @@ Python is being studied systematically, from core language fundamentals through 
 * `with`
 * Resource lifecycle
 
-### 14. Decorators & Closures
+#### 14. Decorators & Closures
 
 * Nested functions
 * Closures
@@ -309,7 +309,7 @@ Python is being studied systematically, from core language fundamentals through 
 * Decorators with arguments
 * Practical decorator patterns
 
-### 15. Python Internals & Execution Model
+#### 15. Python Internals & Execution Model
 
 * Source code to execution
 * Bytecode fundamentals
@@ -326,7 +326,7 @@ Python is being studied systematically, from core language fundamentals through 
 * `deepcopy`
 * Mutability and object sharing
 
-### 16. Standard Library Foundations
+#### 16. Standard Library Foundations
 
 * `math`
 * `random`
@@ -344,7 +344,7 @@ Python is being studied systematically, from core language fundamentals through 
 
 The goal is not to memorize the entire standard library, but to understand the major tools available and know how to use documentation effectively.
 
-### 17. Testing & Code Quality
+#### 17. Testing & Code Quality
 
 * Assertions
 * `assert`
@@ -363,7 +363,7 @@ The goal is not to memorize the entire standard library, but to understand the m
 * PEP 8
 * Documentation
 
-### 18. Type System & Modern Python
+#### 18. Type System & Modern Python
 
 * Type annotations
 * Built-in generic types
@@ -377,7 +377,7 @@ The goal is not to memorize the entire standard library, but to understand the m
 * `typing`
 * Structural typing fundamentals
 
-### 19. Concurrency Foundations
+#### 19. Concurrency Foundations
 
 * Processes vs threads
 * Threading fundamentals
@@ -390,6 +390,88 @@ The goal is not to memorize the entire standard library, but to understand the m
 * Event loops
 * `asyncio`
 * When concurrency is useful
+
+### 2. SQL & PostgreSQL
+
+SQL and PostgreSQL are studied progressively from relational database fundamentals through querying, schema design, transactions, advanced SQL, and database-side programming.
+
+📁 `postgresql/`
+
+#### Foundations
+
+* Database fundamentals
+* Relational databases
+* SQL command categories
+* PostgreSQL CLI / `psql`
+
+#### Database Structure
+
+* Database creation
+* Table creation
+* Data types
+* Constraints
+* Primary keys
+* Unique constraints
+* NOT NULL
+* CHECK constraints
+* Default values
+
+#### Data Manipulation & Querying
+
+* INSERT
+* UPDATE
+* DELETE
+* SELECT
+* Filtering
+* WHERE
+* ORDER BY
+* LIMIT
+* Aggregate functions
+* GROUP BY
+* HAVING
+* String functions
+
+#### Schema & Relational Modeling
+
+* ALTER TABLE
+* Relationships
+* Foreign keys
+* JOINs
+* Referential integrity
+* CASE
+* COALESCE
+
+#### Transactions
+
+* Transactions
+* COMMIT
+* ROLLBACK
+* SAVEPOINT
+* Transaction Control Language (TCL)
+* ACID fundamentals
+
+#### Advanced SQL
+
+* Views
+* Common Table Expressions (CTEs)
+* Window functions
+* PARTITION BY
+* Ranking and analytical queries
+
+#### Database Programming
+
+* User-defined functions
+* Stored procedures
+* Triggers
+
+#### Practice Environment
+
+The PostgreSQL topics use a shared practice database defined through:
+
+📁 `postgresql/00_setup/schema.sql`  
+📁 `postgresql/00_setup/seed.sql`
+
+The PostgreSQL path is designed to build practical SQL ability for **backend engineering, data-intensive applications, production systems, analytics, and technical interviews**.
 
 ---
 
@@ -411,25 +493,50 @@ The depth increases progressively without introducing unnecessary complexity or 
 Engineering-Foundations/
 │
 ├── python/
-│   ├── 01_variables/
-│   ├── 02_data_types/
-│   ├── 03_operators/
-│   ├── 04_conditionals/
-│   ├── 05_loops/
+│   ├── 01_variables&objectmodel/
+│   ├── 02_DataTypes_And_DataStructures/
+│   ├── 03_operators&expressions/
+│   ├── 04_Conditional_logics/
+│   ├── 05_Iterations_And_Loops/
 │   ├── 06_strings/
 │   ├── 07_functions/
-│   ├── 08_comprehensions/
-│   ├── 09_modules_packages/
-│   ├── 10_oop/
-│   ├── 11_exceptions/
-│   ├── 12_file_io/
-│   ├── 13_iterators_generators/
-│   ├── 14_decorators_closures/
-│   ├── 15_python_internals/
-│   ├── 16_standard_library/
-│   ├── 17_testing/
-│   ├── 18_type_system/
-│   └── 19_concurrency/
+│   ├── 08_comprehensions&functionalpatterns/
+│   ├── 09_modules&packages/
+│   ├── 10_object-oriented-programming/
+│   ├── 11_error-handling&exceptions/
+│   ├── 12_file-io/
+│   ├── 13_iterators-generators&context-managers/
+│   ├── 14_decorators&closures/
+│   ├── 15_python-internals&execution-model/
+│   ├── 16_standard-library-foundations/
+│   ├── 17_testing&code-quality/
+│   ├── 18_type-system&modern-python/
+│   └── 19_concurrency-foundations/
+│
+├── postgresql/
+│   ├── 00_setup/
+│   ├── 01_database_fundamentals/
+│   ├── 02_sql_command_categories/
+│   ├── 03_postgresql_cli/
+│   ├── 04_database_and_table_creation/
+│   ├── 05_data_types/
+│   ├── 06_constraints/
+│   ├── 07_insert_update_delete/
+│   ├── 08_select_and_filtering/
+│   ├── 09_aggregate_functions/
+│   ├── 10_group_by_and_having/
+│   ├── 11_string_functions/
+│   ├── 12_alter_table/
+│   ├── 13_relationships_and_foreign_keys/
+│   ├── 14_joins/
+│   ├── 15_case_and_coalesce/
+│   ├── 16_transactions_and_tcl/
+│   ├── 17_views/
+│   ├── 18_ctes/
+│   ├── 19_window_functions/
+│   ├── 20_user_defined_functions/
+│   ├── 21_stored_procedures/
+│   └── 22_triggers/
 │
 └── README.md
 ```
@@ -438,18 +545,19 @@ Each topic may contain:
 
 ```text
 topic/
-├── examples.py
-├── practice.py
-└── README.md
+├── README.md
+├── practice.py / practice.sql
+└── fundamentals.py / supporting files
 ```
 
 ---
 
 ## 📈 Progress
 
-| Area                | Status         |
-| ------------------- | -------------- |
+| Area | Status |
+|---|---|
 | Python Fundamentals | 🟢 In Progress |
+| SQL & PostgreSQL | 🟢 In Progress |
 
 Progress will be updated as topics are completed.
 
