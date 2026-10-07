@@ -475,6 +475,37 @@ The PostgreSQL path is designed to build practical SQL ability for **backend eng
 
 ---
 
+### 3. Linux
+
+Linux is studied as the command-line and operating-system foundation required for **servers, backend systems, cloud infrastructure, containers, CI/CD, networking, databases, and AI infrastructure**.
+
+📁 `linux/`
+
+#### Linux Learning Path
+
+1. Linux & Shell Fundamentals
+2. Filesystem & Navigation
+3. Files & Directories
+4. Reading & Inspecting Files
+5. Search & Text Processing
+6. Pipes, Redirection & Shell Control
+7. Processes & Job Control
+8. Disk & System Resources
+9. Users, Ownership & Permissions
+10. Environment Variables & PATH
+11. Archives & Compression
+12. Shell Editing & Productivity
+13. Services & System Logs
+14. Linux Networking
+15. SSH & Remote Computing
+16. Basic Bash Scripting
+
+The path progresses from **command-line fundamentals → filesystem → text processing → processes → permissions → networking → remote computing → automation**.
+
+The goal is not command memorization. The goal is to understand how Linux is **operated, inspected, troubleshot, and automated** in real engineering environments.
+
+---
+
 ## 🧠 Learning Standard
 
 The objective is not to memorize Python syntax.
@@ -558,6 +589,7 @@ topic/
 |---|---|
 | Python Fundamentals | 🟢 In Progress |
 | SQL & PostgreSQL | 🟢 In Progress |
+| Linux | 🟢 In Progress |
 
 Progress will be updated as topics are completed.
 
