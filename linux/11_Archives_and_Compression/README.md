@@ -1,28 +1,26 @@
-# Users, Ownership & Permissions
+# Archives & Compression
 
-Linux access control is based on users, groups, ownership, and read/write/execute permissions.
+How Linux packages multiple files into archives and optionally compresses the resulting data.
 
 ## Architecture
 
-User → Group → Owner → rwx → Access
+Files → Archive → Compress → Extract
 
 ## Commands
 
-`who` · `su` · `sudo` · `passwd` · `chown` · `chmod`
+`gzip` · `gunzip` · `tar`
 
 ## Core Concepts
 
-Permissions apply to owner, group, and other. r=4, w=2, x=1; 755 means owner rwx and others r-x; 644 means owner rw and others r--. sudo runs authorized commands with elevated privileges; su switches user. chown changes ownership and chmod changes permissions. Practice changes only on files you own.
+Archiving combines files into one container; compression reduces data size. .tar is an archive, .gz is gzip compression, and .tar.gz is a tar archive compressed with gzip. tar -cf creates, tar -tf lists, tar -xf extracts, tar -czf creates gzip-compressed archives, and tar -xzf extracts them.
 
 ## Examples
 Hands-on commands are provided in the examples.sh file.
 
 ## Engineering Relevance
-
 This topic builds practical Linux skills used in servers, cloud systems, containers, CI/CD, backend services, databases, and AI infrastructure.
 
 ## Completion Check
-
 - explain the mental model behind this topic
 - use the listed commands without blindly copying them
 - interpret normal command output
