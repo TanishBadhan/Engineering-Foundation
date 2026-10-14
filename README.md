@@ -506,6 +506,21 @@ The goal is not command memorization. The goal is to understand how Linux is **o
 
 ---
 
+### 4. Testing & Debugging Drills
+
+Testing and debugging are tracked as a **standalone engineering practice module** at the repository root, not inside the Python topic folders. The skills transfer across programming languages and are practiced through progressively harder bug-fixing exercises.
+
+Start directly from:
+
+- [Testing & Debugging Drills — module guide](testing_drills/README.md)
+- [Practice Set 1 — goals and progress](testing_drills/practice_set_01/README.md)
+- [Practice Set 1 — questions, original attempts, feedback, and reference fixes](testing_drills/practice_set_01/tester_drills.md)
+- [Errors Made — mistakes, corrections, and improvement checks](testing_drills/practice_set_01/errors_made.md)
+
+The drills cover logic defects, boundaries, input validation, exceptions, return values, strings, lists, dictionaries, test design, and later regression testing and open-source issue simulations. Guided answers are tracked separately from problems solved independently.
+
+---
+
 ## 🧠 Learning Standard
 
 The objective is not to memorize Python syntax.
@@ -521,7 +536,7 @@ The depth increases progressively without introducing unnecessary complexity or 
 ## 🗂️ Repository Structure
 
 ```text
-Engineering-Foundations/
+Engineering-Foundation/
 │
 ├── python/
 │   ├── 01_variables&objectmodel/
@@ -569,6 +584,15 @@ Engineering-Foundations/
 │   ├── 21_stored_procedures/
 │   └── 22_triggers/
 │
+├── linux/
+│
+├── testing_drills/
+│   ├── README.md
+│   └── practice_set_01/
+│       ├── README.md
+│       ├── tester_drills.md
+│       └── errors_made.md
+│
 └── README.md
 ```
 
@@ -590,6 +614,7 @@ topic/
 | Python Fundamentals | 🟢 In Progress |
 | SQL & PostgreSQL | 🟢 In Progress |
 | Linux | 🟢 In Progress |
+| Testing & Debugging Drills | 🟢 In Progress |
 
 Progress will be updated as topics are completed.
 
