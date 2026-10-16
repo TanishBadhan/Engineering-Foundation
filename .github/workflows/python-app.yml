@@ -1,5 +1,5 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+# This workflow runs Python linting and tests when pytest test files exist.
+# See https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
 name: Python application
 
@@ -14,7 +14,6 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -30,10 +29,16 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
-        # stop the build if there are Python syntax errors or undefined names
+        # Stop the build if there are Python syntax errors or undefined names.
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+        # Treat other lint findings as warnings for now.
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest
+    - name: Test with pytest (when tests exist)
+      shell: bash
       run: |
-        pytest
+        if find . -type f \( -name 'test_*.py' -o -name '*_test.py' \) \
+          ! -path './.git/*' ! -path './.venv/*' -print -quit | grep -q .; then
+          python -m pytest
+        else
+          echo "No pytest test files found; skipping tests until a test suite is added."
+        fi
