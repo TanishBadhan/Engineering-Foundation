@@ -1,0 +1,49 @@
+name: Engineering Foundation Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python-syntax:
+    name: Check Python syntax
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Compile Python learning examples
+        run: python -m compileall -q python testing_drills
+
+  bash-syntax:
+    name: Check Bash syntax
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Parse Bash scripts without executing them
+        shell: bash
+        run: |
+          mapfile -d '' scripts < <(find linux -type f -name '*.sh' -print0)
+          if (( ${#scripts[@]} == 0 )); then
+            echo "No .sh files found under linux/; nothing to check."
+            exit 0
+          fi
+          for script in "${scripts[@]}"; do
+            echo "Checking: $script"
+            bash -n "$script"
+          done
