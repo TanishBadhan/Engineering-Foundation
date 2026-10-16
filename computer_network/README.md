@@ -20,7 +20,7 @@ Topics are ordered by dependency. A topic is marked as covered based on study pr
 | 00 | Foundations: networking basics, network types, and topologies | Studied; documentation pending |
 | 01 | IP addressing and subnetting: IPv4, IPv6, loopback, subnetting, CIDR | Basics studied; depth to verify |
 | 02 | Protocols, ports, OSI/TCP-IP models, encapsulation | Studied; documentation pending |
-| 03 | Transport layer: TCP, UDP, sockets, datagrams | In progress; Python experiments started |
+| 03 | Transport layer: TCP, UDP, sockets, datagrams | Notes and local Python labs documented; practical verification pending |
 | 04 | DNS and name resolution | Planned |
 | 05 | HTTP and APIs | Planned |
 | 06 | HTTPS, TLS, and certificates | Planned |
@@ -31,13 +31,15 @@ Topics are ordered by dependency. A topic is marked as covered based on study pr
 
 ## Practical labs
 
-Practical work will be kept separate from conceptual notes as the module grows. Initial labs are planned for:
+Practical work will be kept separate from conceptual notes as the module grows. Current and planned labs include:
 
 - Local network inspection
 - TCP socket communication in Python
 - UDP message communication in Python
 - HTTP request inspection
 - Network troubleshooting
+
+The [TCP/UDP module](TCP-UDP/README.md) contains transport-layer notes and Python socket labs.
 
 Each lab should document its purpose, prerequisites, run instructions, expected behavior, limitations, and cleanup steps. Learning experiments will be identified as such rather than presented as production-ready software.
 
