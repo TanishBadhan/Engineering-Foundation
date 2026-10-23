@@ -57,3 +57,48 @@ example.com.  300  IN  A  192.0.2.10
 The IP address above is an example address, not a claim about the real website.
 
 **Remember:** A domain does not have to publish every record type. A missing `MX` record, for example, does not automatically mean its website's DNS is broken.
+
+## 4. How DNS Resolution Works
+
+When you enter a domain name into a browser, the client needs to discover the relevant address.
+
+### Architecture
+
+```text
+Client / Operating System
+        |
+        v
+Local DNS Cache
+        |
+        | Cache miss
+        v
+Recursive DNS Resolver
+        |
+        v
+Root DNS Server
+        |
+        v
+TLD DNS Server
+        |
+        v
+Authoritative DNS Server
+        |
+        v
+DNS Record / Answer
+        |
+        v
+Resolver -> Client
+```
+
+This is a simplified flow. A valid cached answer can avoid contacting the root, TLD, and authoritative servers.
+
+### Step-by-step flow
+
+1. **Check available cached information.** The operating system or another local component may already have a valid answer.
+2. **Query a recursive resolver.** If the client cannot use a cached answer, it asks a resolver to find the result.
+3. **Contact a root server when needed.** The root server directs the resolver toward the relevant TLD nameservers.
+4. **Contact the TLD nameserver.** For a `.com` domain, this leads toward the nameservers responsible for `.com` domains.
+5. **Contact the authoritative nameserver.** It provides the relevant DNS record for the zone it serves.
+6. **Return the answer.** The resolver returns the result to the client and may cache it according to its TTL.
+
+A **recursive resolver** performs lookup work on behalf of the client. An **authoritative nameserver** provides DNS data for the zone it serves.
