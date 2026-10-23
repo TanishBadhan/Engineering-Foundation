@@ -139,3 +139,31 @@ nslookup -type=CNAME www.example.com
 These commands request particular record types. The domain may not publish the requested record, so an empty result alone does not prove DNS is failing. Output and supported options can vary by platform.
 
 When testing, identify the responding DNS server, check the requested record type, inspect the returned name and value, and remember that cached results can affect what you observe.
+
+## 7. Key Takeaways
+
+- DNS helps translate domain names into records used to locate services.
+- DNS names are organized hierarchically.
+- `A`, `AAAA`, `CNAME`, `MX`, and `TXT` records serve different purposes.
+- Recursive resolvers perform lookups for clients; authoritative nameservers provide records for their zones.
+- Caching speeds up lookups, while TTL controls how long records can be cached.
+- `nslookup` lets you inspect DNS behavior from the command line.
+- Resolving a domain is separate from establishing the connection to the website.
+
+## 8. Knowledge Check
+
+Try answering these without looking at the notes.
+
+1. Why do we need DNS if computers communicate using IP addresses?
+2. What is the difference between a TLD and a subdomain?
+3. When would you use an `A` record rather than an `AAAA` record?
+4. What is the purpose of a `CNAME` record?
+5. What roles do a recursive resolver and an authoritative nameserver play?
+6. What happens when a resolver already has a valid cached answer?
+7. How can a TTL affect the visibility of a DNS change?
+8. Which `nslookup` command would you use to request a domain's `MX` records?
+
+## References
+
+- Video: [DNS in Detail — How the Web Works (TryHackMe)](https://www.youtube.com/watch?v=jpTY1S5vs9k)
+- Companion room: [TryHackMe — DNS in Detail](https://tryhackme.com/room/dnsindetail)
