@@ -102,3 +102,40 @@ This is a simplified flow. A valid cached answer can avoid contacting the root, 
 6. **Return the answer.** The resolver returns the result to the client and may cache it according to its TTL.
 
 A **recursive resolver** performs lookup work on behalf of the client. An **authoritative nameserver** provides DNS data for the zone it serves.
+
+## 5. DNS Caching and TTL
+
+DNS caching stores lookup results temporarily so the same information does not need to be fetched repeatedly.
+
+**TTL (Time to Live)** specifies how long a DNS record may be cached, in seconds. If a record has a TTL of `300`, a resolver can generally cache it for up to 300 seconds.
+
+**Benefits of caching**
+- Reduces repeated DNS queries.
+- Speeds up subsequent lookups.
+- Reduces work for DNS infrastructure.
+
+**Trade-off:** If a record changes, a resolver may continue using its cached answer until that entry expires. As a result, a DNS change may not appear everywhere immediately. Actual behavior depends on caching and the relevant TTLs.
+
+## 6. Practical DNS Queries with `nslookup`
+
+`nslookup` is a command-line utility for querying DNS.
+
+### Basic lookup
+
+```bash
+nslookup example.com
+```
+
+### Query a specific record type
+
+```bash
+nslookup -type=A example.com
+nslookup -type=AAAA example.com
+nslookup -type=MX example.com
+nslookup -type=TXT example.com
+nslookup -type=CNAME www.example.com
+```
+
+These commands request particular record types. The domain may not publish the requested record, so an empty result alone does not prove DNS is failing. Output and supported options can vary by platform.
+
+When testing, identify the responding DNS server, check the requested record type, inspect the returned name and value, and remember that cached results can affect what you observe.
