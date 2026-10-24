@@ -101,6 +101,13 @@ This is a simplified flow. A valid cached answer can avoid contacting the root, 
 5. **Contact the authoritative nameserver.** It provides the relevant DNS record for the zone it serves.
 6. **Return the answer.** The resolver returns the result to the client and may cache it according to its TTL.
 
+<img width="736" height="452" alt="Screenshot 2026-10-24 172732" src="https://github.com/user-attachments/assets/106dbd92-d840-4ac4-b7ab-30b9ba6866ef" />
+[ This represents the uncached example the rescursive resolver then looks to the further servers like root , TLD , authoritative nameserver ]
+
+<img width="751" height="456" alt="image" src="https://github.com/user-attachments/assets/33a14738-a811-4620-9192-e19812e3ae06" />
+[ This represents the cached example when the TTL was alive so the recursive server didn't looked further rather returned from the local cache itself ]
+
+
 A **recursive resolver** performs lookup work on behalf of the client. An **authoritative nameserver** provides DNS data for the zone it serves.
 
 ## 5. DNS Caching and TTL
