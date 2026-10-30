@@ -63,6 +63,10 @@ Engineering-Foundation/
 | [16 — Standard library foundations](./python/16_standard-library-foundations/) | [17 — Testing & code quality](./python/17_testing%26code-quality/) | [18 — Type system & modern Python](./python/18_type-system%26modern-python/) |
 | [19 — Concurrency foundations](./python/19_concurrency-foundations/) | | |
 
+### Python projects
+
+- [Project 1 — Engineering Foundation Calculator](./python/projects/project_1/README.md)
+
 ### PostgreSQL curriculum — 22 topic directories
 
 | Topic range | Includes |
