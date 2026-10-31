@@ -63,9 +63,16 @@ Engineering-Foundation/
 | [16 — Standard library foundations](./python/16_standard-library-foundations/) | [17 — Testing & code quality](./python/17_testing%26code-quality/) | [18 — Type system & modern Python](./python/18_type-system%26modern-python/) |
 | [19 — Concurrency foundations](./python/19_concurrency-foundations/) | | |
 
+<<<<<<< HEAD
 ### Python projects
 
 - [Project 1 — Engineering Foundation Calculator](./python/projects/project_1/README.md)
+=======
+### Python Projects
+
+- [Project 1 — Engineering Foundation Calculator](./python/projects/project_1/README.md)
+- [Project 2 — Weight Converter](./python/projects/project_2/README.md)
+>>>>>>> 76ce71a ( Project_2(python): Weight_convertor)
 
 ### PostgreSQL curriculum — 22 topic directories
 
