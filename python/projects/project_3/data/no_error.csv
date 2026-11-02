@@ -1,0 +1,26 @@
+timestamp,machine_id,severity,message
+2026-11-02 09:00:00,AGV_01,INFO,Machine started
+2026-11-02 09:01:00,AGV_02,WARNING,Battery level low
+2026-11-02 09:02:00,AGV_01,INFO,Machine operational
+2026-11-02 09:03:00,AGV_03,INFO,Navigation system initialized
+2026-11-02 09:04:00,AGV_04,WARNING,Battery level below 30%
+2026-11-02 09:05:00,AGV_05,INFO,Machine started
+2026-11-02 09:06:00,AGV_01,WARNING,Charging required soon
+2026-11-02 09:07:00,AGV_02,INFO,Motor temperature normal
+2026-11-02 09:08:00,AGV_03,WARNING,Navigation recalibration recommended
+2026-11-02 09:09:00,AGV_04,INFO,Machine operational
+2026-11-02 09:10:00,AGV_05,WARNING,Battery level below 25%
+2026-11-02 09:11:00,AGV_01,INFO,Charging completed
+2026-11-02 09:12:00,AGV_02,INFO,Communication link established
+2026-11-02 09:13:00,AGV_03,INFO,Motor temperature normal
+2026-11-02 09:14:00,AGV_04,WARNING,Obstacle detected near travel path
+2026-11-02 09:15:00,AGV_05,INFO,Navigation system initialized
+2026-11-02 09:16:00,AGV_01,INFO,Machine operational
+2026-11-02 09:17:00,AGV_02,WARNING,Charging required soon
+2026-11-02 09:18:00,AGV_03,INFO,Machine operational
+2026-11-02 09:19:00,AGV_04,INFO,Motor temperature normal
+2026-11-02 09:20:00,AGV_05,WARNING,Obstacle detected near travel path
+2026-11-02 09:21:00,AGV_01,INFO,Navigation system initialized
+2026-11-02 09:22:00,AGV_02,INFO,Machine operational
+2026-11-02 09:23:00,AGV_03,WARNING,Battery level below 30%
+2026-11-02 09:24:00,AGV_05,INFO,Charging completed

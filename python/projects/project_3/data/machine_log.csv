@@ -1,0 +1,14 @@
+timestamp,machine_id,severity,message
+2026-10-31 09:15:22,AGV_01,INFO,Machine started
+2026-10-31 09:16:10,AGV_02,ERROR,Motor temperature exceeded limit
+2026-10-31 09:17:45,AGV_01,WARNING,Battery level below 20%
+2026-10-31 09:18:30,AGV_03,CRITICAL,Emergency shutdown activated
+2026-10-31 09:19:12,AGV_02,ERROR,Motor temperature exceeded limit
+2026-10-31 09:20:15,AGV_01,ERROR,Navigation sensor failure
+2026-10-31 09:21:40,AGV_03,INFO,Machine operational
+2026-10-31 09:22:05,AGV_02,WARNING,Low battery detected
+2026-10-31 09:23:30,AGV_02,ERROR,Communication failure
+2026-10-31 09:24:50,AGV_01,INFO,Charging completed
+2026-10-31 09:25:30,AGV_04,ERROR,Communication failure
+2026-10-31 09:26:20,AGV_05,ERROR,Temperature is high
+2026-10-31 09:28:10,AGV_03,INFO,Fan not working
