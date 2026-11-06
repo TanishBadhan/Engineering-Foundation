@@ -11,7 +11,7 @@ A hands-on repository for building software engineering foundations through stru
 |---|---|---|
 | Python | Language fundamentals through modern Python and concurrency foundations | [Browse Python](./python/) |
 | SQL & PostgreSQL | SQL, relational design, querying, transactions, and database-side programming | [Roadmap](./postgresql/README.md) |
-| Statistics | Data types, descriptive and inferential statistics, and measurement scales | [Notes](./statistics/1.Introduction-to-Statistics-and-Data.md) |
+| Statistics | Statistical foundations, categorical data summaries, visualizations, and measures of central tendency | [Week 1](./statistics/1.Introduction-to-Statistics-and-Data.md) · [Week 2](./statistics/2.Describing-Categorical-Data.md) |
 | Linux & Bash | Shell usage, files, processes, permissions, system tools, networking, SSH, and scripting | [Roadmap](./linux/README.md) |
 | Computer networking | Addressing, protocols, ports, network models, TCP/UDP, and Python sockets | [Roadmap](./computer_network/README.md) |
 | Testing & debugging | Practice drills, edge cases, bug analysis, and recurring-mistake tracking | [Guide](./testing_drills/README.md) |
@@ -33,7 +33,8 @@ Engineering-Foundation/
 │   │   └── seed.sql
 │   └── README.md
 ├── statistics/
-│   └── 1.Introduction-to-Statistics-and-Data.md
+│   ├── 1.Introduction-to-Statistics-and-Data.md
+│   └── 2.Describing-Categorical-Data.md
 ├── linux/
 │   └── README.md
 ├── computer_network/
@@ -96,7 +97,7 @@ Engineering-Foundation/
 
 - **Python:** open any numbered topic folder; the topic README and examples live inside the folder.
 - **PostgreSQL:** start with the [roadmap](./postgresql/README.md) and use [00_setup](./postgresql/00_setup/) for the shared practice schema and seed data.
-- **Statistics:** review the [notes](./statistics/1.Introduction-to-Statistics-and-Data.md) for data types, descriptive and inferential statistics, and measurement scales.
+- **Statistics:** start with [Week 1](./statistics/1.Introduction-to-Statistics-and-Data.md) for statistical foundations, then continue to [Week 2](./statistics/2.Describing-Categorical-Data.md) for categorical data summaries and visualization.
 - **Linux:** start with the [roadmap](./linux/README.md); numbered folders group related lessons.
 - **Networking:** use the [roadmap](./computer_network/README.md), then explore [TCP/UDP and Python sockets](./computer_network/TCP-UDP/README.md).
 - **Testing:** follow the [practice-set guide](./testing_drills/practice_set_01/README.md), work through [tester_drills.md](./testing_drills/practice_set_01/tester_drills.md), and maintain [errors_made.md](./testing_drills/practice_set_01/errors_made.md).
