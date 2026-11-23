@@ -1,8 +1,8 @@
 # Computer Networking
 
-A structured, practical record of computer networking fundamentals, transport protocols, networked programming, and the concepts needed to build and troubleshoot backend systems.
+A structured, practical record of networking fundamentals, transport protocols, networked programming, and the concepts needed to build and troubleshoot backend systems.
 
-## Learning goals
+## Learning Goals
 
 - Explain how devices address and communicate with one another.
 - Understand network models, encapsulation, protocols, and ports.
@@ -13,25 +13,47 @@ A structured, practical record of computer networking fundamentals, transport pr
 
 ## Roadmap
 
-Topics are ordered by dependency. A topic is marked as covered based on study progress; notes and practical verification will be added incrementally.
+Topics are ordered by dependency. Completion reflects the concepts studied; practical verification and documentation are tracked separately where appropriate.
 
 | Stage | Topic | Status |
 |---|---|---|
-| 00 | Foundations: networking basics, network types, and topologies | Studied; documentation pending |
+| 00 | Networking basics, network types, and topologies | Studied; documentation pending |
 | 01 | IP addressing and subnetting: IPv4, IPv6, loopback, subnetting, CIDR | Basics studied; depth to verify |
-| 02 | Protocols, ports, OSI/TCP-IP models, encapsulation | Studied; documentation pending |
-| 03 | Transport layer: TCP, UDP, sockets, datagrams | Notes and local Python labs documented; practical verification pending |
+| 02 | Protocols, ports, OSI/TCP-IP models, and encapsulation | Studied; documentation pending |
+| 03 | Transport layer: TCP, UDP, sockets, and datagrams | Notes and local Python labs documented; practical verification pending |
 | 04 | DNS and name resolution | Planned |
-| 05 | HTTP and APIs | Planned |
+| 05 | HTTP and API fundamentals | **Completed and documented** |
 | 06 | HTTPS, TLS, and certificates | Planned |
 | 07 | Client-server architecture and connection lifecycle | Planned |
 | 08 | Proxies and load balancing | Planned |
 | 09 | Network troubleshooting and diagnostic commands | Planned |
 | 10 | SSH and remote access revision | Revision planned |
 
-## Practical labs
+## Completed Module: HTTP and API Fundamentals
 
-Practical work will be kept separate from conceptual notes as the module grows. Current and planned labs include:
+The HTTP and introductory API topics are grouped in one module:
+
+[**HTTP and API Fundamentals →**](./HTTP%20and%20API/README.md)
+
+Covered topics:
+
+- HTTP versions
+- HTTP methods
+- HTTP status codes
+- HTTP headers
+- Cookies
+- CORS
+- HTTP caching
+- What an API is
+- URL structure
+- Path and query parameters
+- Content negotiation
+
+This completion covers the fundamentals listed above. REST principles, resource modelling, URI design, endpoint naming, versioning, HATEOAS, and other API-design topics remain separate roadmap items.
+
+## Practical Labs
+
+Practical work is kept separate from conceptual notes. Current and planned labs include:
 
 - Local network inspection
 - TCP socket communication in Python
@@ -39,28 +61,26 @@ Practical work will be kept separate from conceptual notes as the module grows. 
 - HTTP request inspection
 - Network troubleshooting
 
-The [TCP/UDP module](TCP-UDP/README.md) contains transport-layer notes and Python socket labs.
+The [TCP/UDP module](./TCP-UDP/README.md) contains transport-layer notes and Python socket labs.
 
-Each lab should document its purpose, prerequisites, run instructions, expected behavior, limitations, and cleanup steps. Learning experiments will be identified as such rather than presented as production-ready software.
+Each lab should document its purpose, prerequisites, run instructions, expected behavior, limitations, and cleanup steps. Learning experiments are identified as such rather than presented as production-ready software.
 
-## Documentation standard
+## Documentation Standard
 
-Topic notes will cover:
+Topic notes aim to include:
 
 1. Definition and purpose
-2. The problem the concept solves
-3. A mental model and step-by-step explanation
-4. Practical examples
-5. Common misconceptions and trade-offs
-6. Relevance to backend engineering
-7. Knowledge-check questions
-8. References
+2. The underlying mechanism or mental model
+3. Structured explanations and examples
+4. Important distinctions and common misconceptions
+5. Practical relevance
+6. A concise takeaway
 
-## Completion criteria
+## Completion Criteria
 
 The goal is practical understanding, not memorization. By the end of this roadmap, I should be able to explain the lifecycle of a web request, distinguish TCP from UDP, run and reason about basic socket programs, and use common diagnostic commands to investigate connection problems.
 
-## Working principles
+## Working Principles
 
 - Keep explanations technically accurate and revise misconceptions when found.
 - Prefer small, reproducible experiments over unsupported claims.

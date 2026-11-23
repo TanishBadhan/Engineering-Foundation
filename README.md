@@ -13,7 +13,7 @@ A hands-on repository for building software engineering foundations through stru
 | SQL & PostgreSQL | SQL, relational design, querying, transactions, and database-side programming | [Roadmap](./postgresql/README.md) |
 | Statistics | Statistical foundations, categorical and numerical data summaries, visualizations, measures of central tendency, and dispersion | [Foundations](./statistics/1.Introduction-to-Statistics-and-Data.md) · [Categorical data](./statistics/2.Describing-Categorical-Data.md) · [Numerical data](./statistics/03.Describing-Numerical-Data.md) |
 | Linux & Bash | Shell usage, files, processes, permissions, system tools, networking, SSH, and scripting | [Roadmap](./linux/README.md) |
-| Computer networking | Addressing, protocols, ports, network models, TCP/UDP, and Python sockets | [Roadmap](./computer_network/README.md) |
+| Computer networking | Addressing, protocols, ports, network models, TCP/UDP, Python sockets, HTTP, and API fundamentals | [Roadmap](./computer_network/README.md) · [HTTP and API](./computer_network/HTTP%20and%20API/README.md) |
 | Testing & debugging | Practice drills, edge cases, bug analysis, and recurring-mistake tracking | [Guide](./testing_drills/README.md) |
 
 ## Repository architecture
@@ -46,6 +46,9 @@ Engineering-Foundation/
 │   │   ├── 02-UDP/
 │   │   ├── 03-Python-Sockets/
 │   │   └── README.md
+│   ├── HTTP and API/
+│   │   ├── README.md
+│   │   └── 11 numbered topic folders
 │   └── README.md
 ├── testing_drills/
 │   ├── README.md
@@ -100,7 +103,7 @@ Engineering-Foundation/
 - **PostgreSQL:** start with the [roadmap](./postgresql/README.md) and use [00_setup](./postgresql/00_setup/) for the shared practice schema and seed data.
 - **Statistics:** start with [statistical foundations](./statistics/1.Introduction-to-Statistics-and-Data.md), continue with [categorical data](./statistics/2.Describing-Categorical-Data.md), and then study [numerical data](./statistics/03.Describing-Numerical-Data.md) for measures of centre and spread.
 - **Linux:** start with the [roadmap](./linux/README.md); numbered folders group related lessons.
-- **Networking:** use the [roadmap](./computer_network/README.md), then explore [TCP/UDP and Python sockets](./computer_network/TCP-UDP/README.md).
+- **Networking:** use the [roadmap](./computer_network/README.md), then explore [HTTP and API fundamentals](./computer_network/HTTP%20and%20API/README.md) and [TCP/UDP and Python sockets](./computer_network/TCP-UDP/README.md).
 - **Testing:** follow the [practice-set guide](./testing_drills/practice_set_01/README.md), work through [tester_drills.md](./testing_drills/practice_set_01/tester_drills.md), and maintain [errors_made.md](./testing_drills/practice_set_01/errors_made.md).
 
 ## Continuous integration
